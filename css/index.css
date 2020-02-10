@@ -1,0 +1,15 @@
+h1,
+h2 {
+  text-align: center;
+}
+
+nav ul {
+  padding: 5px;
+  margin: 5px;
+}
+
+nav li {
+  text-align: center;
+  margin: 5px;
+  display: block;
+}

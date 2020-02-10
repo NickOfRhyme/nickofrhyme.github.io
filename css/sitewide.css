@@ -49,8 +49,14 @@ nav li {
 }
 
 nav a {
-  padding: 4px;
-  margin: 4px;
+  padding: 0px, 8px;
+  margin: 10px;
+  border-radius: 3px;
+}
+
+nav a:hover {
+  color: #db810c;
+  background-color: #f6e274;
 }
 
 footer {
