@@ -8,24 +8,39 @@
 
 h1,
 h2 {
-  color: #db810c;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 5px;
 }
 
 h1 {
-  margin: 0 auto;
-  font-size: 3em;
+  color: hsl(34, 90%, 43%);
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: hsl(34, 85%, 40%);
+  margin-top: 0px;
 }
 
 body {
-  background-color: #080808;
-  color: #ddd;
+  background-color: #090909;
+  max-width: 1200px;
+  margin: auto;
+  color: #ccc;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  padding: 5px;
+  font-size: 1.1em;
+  line-height: 1.1em;
 }
 
 #main {
   max-width: 700px;
   margin: 0 auto;
-  background-color: #151515;
+  background-color: #171717;
   border-radius: 10px;
   padding: 5px 10px;
 }
@@ -34,7 +49,7 @@ header {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   color: #151515;
-  background-color: #db810c;
+  background-color: hsl(34, 90%, 43%);
   position: sticky;
 }
 
