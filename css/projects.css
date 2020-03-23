@@ -25,9 +25,13 @@
 }
 
 @media only screen and (max-width: 600px) {
-  /* #project-list li {
+  #project-list li {
     display: block;
-  } */
+  }
+  #project-list li {
+    display: block;
+    text-align: center;
+  }
 }
 
 .project-description {
@@ -37,6 +41,12 @@
 .project-link {
   grid-area: link;
 }
+
+#project-list li:nth-child(2n-1) .project-link,
+#project-list li:nth-child(2n-1) h2 {
+  text-align: right;
+}
+
 .project-screenshot {
   grid-column: 2;
   grid-area: screenshot;

@@ -11,5 +11,5 @@ nav ul {
 nav li {
   text-align: center;
   margin: 5px;
-  display: block;
+  /* display: block; */
 }

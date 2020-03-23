@@ -32,19 +32,10 @@ body {
   position: relative;
 }
 
-#container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 50%);
-}
-
-#main {
-  max-width: 700px;
-  margin: auto;
-  background-color: #171717;
-  border-radius: 10px;
-  padding: 5px 10px;
+@media only screen and (max-width: 730px) {
+  body {
+    margin: auto 10px;
+  }
 }
 
 header {
@@ -53,6 +44,20 @@ header {
   color: #151515;
   background-color: hsl(34, 90%, 43%);
   position: sticky;
+}
+
+@media only screen and (min-width: 731px) and (max-width: 1220px) {
+  header {
+    margin: 10px;
+  }
+}
+
+#main {
+  max-width: 700px;
+  margin: auto;
+  background-color: #171717;
+  border-radius: 10px;
+  padding: 5px 10px;
 }
 
 nav ul {
