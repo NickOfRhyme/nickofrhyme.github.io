@@ -24,16 +24,6 @@
     "screenshot link";
 }
 
-@media only screen and (max-width: 600px) {
-  #project-list li {
-    display: block;
-  }
-  #project-list li {
-    display: block;
-    text-align: center;
-  }
-}
-
 .project-description {
   margin-top: 0;
   grid-area: description;
@@ -42,9 +32,11 @@
   grid-area: link;
 }
 
-#project-list li:nth-child(2n-1) .project-link,
-#project-list li:nth-child(2n-1) h2 {
-  text-align: right;
+@media only screen and (min-width: 601px) {
+  #project-list li:nth-child(2n-1) .project-link,
+  #project-list li:nth-child(2n-1) h2 {
+    text-align: right;
+  }
 }
 
 .project-screenshot {
@@ -55,4 +47,11 @@
 .project-screenshot img {
   border: 5px solid #db810c;
   border-radius: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  #project-list li {
+    display: block;
+    text-align: center;
+  }
 }
