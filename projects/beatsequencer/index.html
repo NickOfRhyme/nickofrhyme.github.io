@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="sequencer.js" defer></script>
+    <title>Nick's Fancy Beat Sequencer</title>
+  </head>
+  <body>
+    <div id="container">
+      <div data-drum="kick" class="kick beat1"></div>
+      <div data-drum="kick" class="kick beat2"></div>
+      <div data-drum="kick" class="kick beat3"></div>
+      <div data-drum="kick" class="kick beat4"></div>
+      <div data-drum="kick" class="kick beat5"></div>
+      <div data-drum="kick" class="kick beat6"></div>
+      <div data-drum="kick" class="kick beat7"></div>
+      <div data-drum="kick" class="kick beat8"></div>
+      <div data-drum="snare" class="snare beat1"></div>
+      <div data-drum="snare" class="snare beat2"></div>
+      <div data-drum="snare" class="snare beat3"></div>
+      <div data-drum="snare" class="snare beat4"></div>
+      <div data-drum="snare" class="snare beat5"></div>
+      <div data-drum="snare" class="snare beat6"></div>
+      <div data-drum="snare" class="snare beat7"></div>
+      <div data-drum="snare" class="snare beat8"></div>
+      <div data-drum="hihat" class="hihat beat1"></div>
+      <div data-drum="hihat" class="hihat beat2"></div>
+      <div data-drum="hihat" class="hihat beat3"></div>
+      <div data-drum="hihat" class="hihat beat4"></div>
+      <div data-drum="hihat" class="hihat beat5"></div>
+      <div data-drum="hihat" class="hihat beat6"></div>
+      <div data-drum="hihat" class="hihat beat7"></div>
+      <div data-drum="hihat" class="hihat beat8"></div>
+      <div data-drum="cymbal" class="cymbal beat1"></div>
+      <div data-drum="cymbal" class="cymbal beat2"></div>
+      <div data-drum="cymbal" class="cymbal beat3"></div>
+      <div data-drum="cymbal" class="cymbal beat4"></div>
+      <div data-drum="cymbal" class="cymbal beat5"></div>
+      <div data-drum="cymbal" class="cymbal beat6"></div>
+      <div data-drum="cymbal" class="cymbal beat7"></div>
+      <div data-drum="cymbal" class="cymbal beat8"></div>
+    </div>
+    <div id="playback-controls">
+      <button class="play"></button>
+      <button class="stop"></button>
+    </div>
+    <div id="BPM-controls">
+      <p id="BPM-display">
+        <span id="value">120</span><span id="unit">BPM</span>
+      </p>
+      <input type="range" id="BPM-slider" min="30" max="500" value="120" />
+    </div>
+    <audio id="kick" src="/sounds/171104__dwsd__kick-gettinglaid.wav"></audio>
+    <audio id="snare" src="/sounds/183106__dwsd__snr-doitlive.wav"></audio>
+    <audio id="hihat" src="/sounds/183105__dwsd__hat-appetizer.wav"></audio>
+    <audio id="cymbal" src="/sounds/207956__altemark__cymbal.wav"></audio>
+  </body>
+</html>
