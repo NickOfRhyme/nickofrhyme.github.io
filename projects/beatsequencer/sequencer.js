@@ -17,8 +17,7 @@ drums.forEach(drum => {
 
 function startBeat(beatsPM) {
   beatInterval = setInterval(advanceBeat, (60 / beatsPM) * 1000);
-  stopButton.disabled = false;
-  beatsPMslider.disabled = !beatsPMslider.disabled;
+  beatsPMslider.disabled = true;
 }
 
 function advanceBeat() {
@@ -41,8 +40,7 @@ function advanceBeat() {
 
 function pauseBeat() {
   clearInterval(beatInterval);
-  stopButton.disabled = true;
-  beatsPMslider.disabled = !beatsPMslider.disabled;
+  beatsPMslider.disabled = false;
 }
 
 function stopBeat() {
